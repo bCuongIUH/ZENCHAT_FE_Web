@@ -1,0 +1,231 @@
+.container {
+    height: 100vh;
+    background-color: rgb(224, 230, 230);
+
+    & #overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    & .wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        & .section-one {
+            width: 5%;
+            height: 100vh; // Chiều cao 100% của viewport
+            background-color: rgb(240, 143, 23);
+            position: relative;
+
+            & .list-icon {
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+
+                & i {
+                    font-size: 38px;
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                    color: white;
+                }
+            }
+
+            & .avt {
+                & .btn-avt {
+                    outline: 0;
+                    border: 0;
+                    background-color: rgb(240, 143, 23);
+                }
+
+                position: absolute;
+                bottom: 5px;
+                padding-left: 10px;
+            }
+        }
+
+        & .section-two {
+            background-color: white;
+            width: 25%;
+            height: 100vh; // Chiều cao 100% của viewport
+            border-right: 1px solid black;
+
+            & .bar-search {
+                padding: 20px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                border-bottom: 1px solid black;
+                padding-bottom: 20px;
+
+                & input {
+                    border: none;
+                    font-size: 20px;
+                    background-color: rgb(234, 242, 242);
+                    border-radius: 5px;
+                }
+
+                & button {
+                    border: 0;
+                    background-color: white;
+
+                    & i {
+                        font-size: 25px;
+                    }
+                }
+
+                & button:hover {
+                    background-color: rgb(207, 205, 202);
+                    border-radius: 5px;
+                }
+            }
+
+            & .list-friend {
+                display: flex;
+                flex-direction: column;
+
+                & #icon-contact {
+                    font-size: 30px;
+                    padding: 30px;
+
+                }
+
+                & #icon-contact:hover {
+                    color: rgb(241, 160, 54);
+                }
+
+
+            }
+        }
+
+        & .section-three-sco {
+            background-color: white;
+            width: 70%;
+            height: 100vh; // Chiều cao 100% của viewport
+
+
+
+            & .title {
+                display: flex;
+                height: 10vh;
+                justify-content: space-around;
+                align-items: center;
+                border-bottom: 1px solid black;
+
+
+                & .title-inner {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                }
+
+                & .title-content {
+                    margin-left: 20px;
+                    font-size: 25px;
+                }
+            }
+
+            & .friend-number {
+                padding-left: 20px;
+                font-size: 20px;
+                height: 5vh;
+            }
+
+            & .group-number {
+                padding-left: 20px;
+                font-size: 20px;
+                height: 5vh;
+            }
+
+            & .friend-request-number {
+                padding-left: 20px;
+                font-size: 20px;
+                height: 5vh;
+            }
+
+            & .list-friend-wrapper {
+                margin-left: 20px;
+                scrollbar-width: auto;
+                overflow-y: scroll;
+                height: 72vh;
+
+
+            }
+
+            & .group-name {
+                margin-left: 20px;
+                scrollbar-width: auto;
+                overflow-y: scroll;
+                height: 72vh;
+
+            }
+
+            & .bar-search {
+
+                display: flex;
+                align-items: center;
+                height: 10vh;
+                padding-left: 20px;
+
+                & .bar-search-wrapper {
+
+                    border-radius: 20px;
+                    width: 50%;
+
+
+                    $primary-color: #e8851c;
+                    $input-padding: 10px;
+                    $input-border-radius: 25px;
+
+                    input[type="search"] {
+                        padding: $input-padding;
+                        border-radius: $input-border-radius;
+                        border: none;
+                        background: white;
+                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                        width: 90%;
+                        outline: none;
+                        transition: box-shadow 0.3s ease;
+                        color: #333;
+
+                        &::placeholder {
+                            color: #999;
+                        }
+
+                        &:focus {
+                            box-shadow: 0 0 5px $primary-color;
+                        }
+                    }
+
+
+                }
+
+
+
+
+
+            }
+
+            & .friend-name {
+
+                & .letter {
+                    margin-left: 20px;
+                    font-weight: 800;
+                    font-size: 30px;
+                }
+
+                & .info {
+                    margin-left: 30px;
+                }
+            }
+        }
+
+    }
+}

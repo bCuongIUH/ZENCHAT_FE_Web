@@ -1,0 +1,28 @@
+.item-group-inner {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-bottom: 1px black solid;
+
+    & img {
+        font-size: 40px;
+
+
+    }
+
+    & .item-group-information {
+
+        padding-left: 15px;
+
+        & .item-group-name {
+            font-size: 20px;
+        }
+
+        & .item-group-members {
+            font-size: 15px;
+        }
+    }
+
+
+}
